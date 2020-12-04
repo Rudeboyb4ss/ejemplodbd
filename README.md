@@ -1,6 +1,6 @@
 ## Proyecto de ejemplo para el laboratorio de bases de datos 2-2020
 
-Creado por Romina Palma & Jorge Sandoval 
+Realizado por Romina Palma, Camila Norambuena & Jorge Sandoval. 
 
 ### Pasos a seguir para clonar
 
