@@ -10,7 +10,9 @@ use Illuminate\Notifications\Notifiable;
 class User extends Authenticatable
 {
     use HasFactory, Notifiable;
-
+    public function usercouse(){
+        return $this->hasMany(UserCourse::class);
+    }
     /**
      * The attributes that are mass assignable.
      *
