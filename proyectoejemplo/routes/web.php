@@ -17,7 +17,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/success', function () {
+    return view('success');
+});
 
+Route::get('/register', function () {
+    return view('register');
+});
+
+Route::post('/course/new','CourseController@store')->name('CourseStore');
+Route::get('/course','CourseController@index');
 Route::get('/users','UserController@index');
 Route::get('/users/{id}','UserController@show');
 Route::post('/users/create','UserController@store');

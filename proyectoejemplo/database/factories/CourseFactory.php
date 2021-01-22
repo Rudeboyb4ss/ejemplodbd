@@ -22,8 +22,8 @@ class CourseFactory extends Factory
     public function definition()
     {
         return [
-            'nombre'=> $this->faker->name,
-            'descripcion'=> $this->faker->text,
+            'nombre'=> $this->faker->unique()->randomElement($array = array('dbd','tbd','edeco','sistope','admin','metodos','progra','eda','peradigmas','calculo 1','orga','redes','fingeso')),
+            'descripcion'=> $this->faker->randomElement($array = array('El mejor ramo','Se pasa con 4','Se pasa en PA','ya te lo echaste','comodín fijo')),
             'nivel'=> $this->faker->numberBetween($min = 1, $max = 9)
         ];
     }
